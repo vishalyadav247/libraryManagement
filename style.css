@@ -1,0 +1,55 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background:linear-gradient(to right, #96ceb1,#588c7e) ;
+}
+.mainBox{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+
+}
+#libraryForm{
+    background-color:#f2ae72;
+}
+#libraryRecord{
+    background-color: #f2ae72;
+    background-color: #C0C0C0;
+}
+#addBookForm{
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+}
+#issueBookForm{
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+}
+#returnBookForm{
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+}
+#message{
+    height: 50px;
+}
+
+#formArea{
+    min-height: 420px;
+    padding:0px 50px;
+    /* background-color: rgba(255, 247, 235, 0.541); */
+}
+#basicArea{
+    width: 100%;
+    height:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li:active{
+}
+#Record{
+    height: 400px;
+    overflow-y: scroll;
+}

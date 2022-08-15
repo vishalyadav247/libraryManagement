@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>University Library</title>
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font family added-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Pacifico&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar border border-3 border-top-0 border-start-0 border-end-0 border-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-4 fw-bold">University Library</a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div id="message">
+
+    </div>
+    <!-- main area -->
+    <div class="mainBox">
+
+        <!--library forms -->
+        <div id="libraryForm" class="col-12 col-md-6 col-lg-5">
+            <div class="card-header rounded-0 bg-secondary">
+                <ul class="nav nav-tabs card-header-tabs fw-bold">
+                    <li class="nav-item">
+                        <a id="addBookLink" class="nav-link text-light rounded-0" href="#">Add Book</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a id="issueBookLink" class="nav-link text-light rounded-0 "  href="#">Issue Book</a>
+                    </li>
+                    <li  class="nav-item ">
+                        <a id="returnBookLink" class="nav-link text-light rounded-0" href="#">Return Book</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="formArea">
+                <div id="basicArea"><h1>Welcome to the University Liverary</h1></div>
+            </div>
+        </div>
+
+        <!-- books record section -->
+        <div id="libraryRecord" class="col-12 col-md-6 col-lg-5">
+            <div class="card-header rounded-0 bg-secondary">
+                <ul class="nav nav-tabs card-header-tabs fw-bold">
+                    <li class="nav-item ">
+                        <a id="recordLink" class="nav-link text-light rounded-0" aria-current="true" href="#">Books In Library</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a id="issuedBookLink" class="nav-link text-light rounded-0" href="#">Issued Books</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="Record">
+                <table class="table table-striped ">
+                    <thead id="thead">
+                        
+                    </thead>
+                    <tbody id="tbody" class="">
+                        <tr>
+                            <th scope="row">${i + 1}</th>
+                            <td>${book.bookName}</td>
+                            <td>${book.authorName}</td>
+                            <td>${book.bookType}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- custom js -->
+    <script type="module" src="index.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
+
