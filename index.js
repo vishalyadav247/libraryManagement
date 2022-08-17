@@ -40,7 +40,7 @@ function operation() {
     </div>
 </div>
 <button id="addBookBtn" type="submit"
-    class="btn btn-outline-success mt-5 mb-2 col-5 col-md-4 mx-auto rounded-3 border border-5 border-light fw-bold">Add
+    class="btn btn-outline-success mt-5 mb-2 col-7 col-md-4 mx-auto rounded-3 border border-5 border-light fw-bold">Add
     Book</button>
     </form>`
 
@@ -108,7 +108,7 @@ function operation1() {
                 
                 </select>
                 <button id="issueBookBtn" type="submit"
-                    class="btn btn-outline-danger my-5 col-5 col-md-4 rounded-3 border border-5 border-light fw-bold  mx-auto">Issue
+                    class="btn btn-outline-danger my-5 col-7 col-md-4 rounded-3 border border-5 border-light fw-bold  mx-auto">Issue
                     Book</button>
             </form>
        `
@@ -182,7 +182,7 @@ function operation2() {
         
     </select>
     <button id="returnBookBtn" type="submit"
-        class="btn btn-outline-success my-5 col-5 col-md-4 rounded-3 border border-5 border-light fw-bold  mx-auto">Return
+        class="btn btn-outline-success my-5 col-7 col-md-4 rounded-3 border border-5 border-light fw-bold  mx-auto">Return
         Book</button>
 </form>
 `
